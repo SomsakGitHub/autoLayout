@@ -1,24 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-et-p1D">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="S7a-hP-kSN">
+                                        <rect key="frame" x="-88.5" y="112" width="591" height="224"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="S7a-hP-kSN" firstAttribute="height" secondItem="xSB-et-p1D" secondAttribute="height" multiplier="0.5" id="1Z0-qF-Cue"/>
+                                    <constraint firstItem="S7a-hP-kSN" firstAttribute="centerX" secondItem="xSB-et-p1D" secondAttribute="centerX" id="3N1-ul-9Mw"/>
+                                    <constraint firstItem="S7a-hP-kSN" firstAttribute="centerY" secondItem="xSB-et-p1D" secondAttribute="centerY" id="Pgb-jx-47B"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="somsak kaeworasan" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tzb-BN-hMJ">
+                                <rect key="frame" x="0.0" y="492" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="raJ-wo-e3D"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="somsak kaeworasan sfsdfdsfdsfdsfdsfdsfds sdfdsfdsfsdf sdfdsfsdfdsf sdfsdfdsfdsfdsfsdfsdfsdfdsf" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J6x-LF-XpQ">
+                                <rect key="frame" x="20" y="536" width="374" height="326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J6x-LF-XpQ" firstAttribute="top" secondItem="Tzb-BN-hMJ" secondAttribute="bottom" id="1MH-U2-36D"/>
+                            <constraint firstItem="xSB-et-p1D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="59p-Tx-E2i"/>
+                            <constraint firstItem="xSB-et-p1D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7au-bW-EuF"/>
+                            <constraint firstItem="Tzb-BN-hMJ" firstAttribute="top" secondItem="xSB-et-p1D" secondAttribute="bottom" id="DHW-0Q-E1M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J6x-LF-XpQ" secondAttribute="bottom" id="GyM-eC-8gK"/>
+                            <constraint firstItem="xSB-et-p1D" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Q8v-ER-kCs"/>
+                            <constraint firstItem="J6x-LF-XpQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="Rlq-fJ-Yhu"/>
+                            <constraint firstItem="Tzb-BN-hMJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="URS-uL-m7z"/>
+                            <constraint firstItem="xSB-et-p1D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="c67-AC-rSe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tzb-BN-hMJ" secondAttribute="trailing" id="dhy-C3-iTb"/>
+                            <constraint firstItem="J6x-LF-XpQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hu4-xL-ROb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImage" destination="S7a-hP-kSN" id="62T-2X-Dk5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-145" y="78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profile" width="591" height="709"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
