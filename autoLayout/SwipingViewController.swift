@@ -18,12 +18,22 @@ class SwipingViewController: UIViewController {
         
     }
     
+//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//
+//        let x = targetContentOffset.pointee.x
+//
+//        pageControl.currentPage = Int(x / view.frame.width)
+//    }
+    
     @IBAction func prevTouch(_ sender: Any) {
-        
+        let nextIndex = max(pageControl.currentPage - 1, 0)
+        let indexPath = IndexPath(item: nextIndex, section: 0)
+        pageControl.currentPage = nextIndex
+        self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
     @IBAction func nextTouch(_ sender: Any) {
-        let nextIndex = pageControl.currentPage + 1
+        let nextIndex = min(pageControl.currentPage + 1, 3)
         let indexPath = IndexPath(item: nextIndex, section: 0)
         pageControl.currentPage = nextIndex
         self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
