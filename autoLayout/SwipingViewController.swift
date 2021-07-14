@@ -15,7 +15,7 @@ class SwipingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
     }
     
 //    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
@@ -55,6 +55,8 @@ extension SwipingViewController: UICollectionViewDataSource, UICollectionViewDel
         let swipingCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "swipingCell", for: indexPath) as! SwipingCollectionViewCell
             
         swipingCollectionViewCell.backgroundColor = indexPath.item % 2 == 0 ? .red : .green
+        swipingCollectionViewCell.textViewHight.constant = 50
+        swipingCollectionViewCell.dynamicLabel.text = "swipingCellswipingCellswipingCell"
             
         return swipingCollectionViewCell
     }

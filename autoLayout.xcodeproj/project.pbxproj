@@ -10,6 +10,8 @@
 		462CE3F72692F6C00037AA0A /* Swiping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462CE3F62692F6C00037AA0A /* Swiping.storyboard */; };
 		462CE3FB269343160037AA0A /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462CE3FA269343160037AA0A /* SwipingViewController.swift */; };
 		462CE3FD269344130037AA0A /* SwipingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462CE3FC269344130037AA0A /* SwipingCollectionViewCell.swift */; };
+		FE3756212698A1600043806E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3756202698A1600043806E /* Main.storyboard */; };
+		FE3756252698B13B0043806E /* ConstraintsCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3756242698B13B0043806E /* ConstraintsCode.storyboard */; };
 		FEABBA83266383CF0093FED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEABBA82266383CF0093FED3 /* AppDelegate.swift */; };
 		FEABBA85266383CF0093FED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEABBA84266383CF0093FED3 /* SceneDelegate.swift */; };
 		FEABBA8C266383D00093FED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEABBA8B266383D00093FED3 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		462CE3F62692F6C00037AA0A /* Swiping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swiping.storyboard; sourceTree = "<group>"; };
 		462CE3FA269343160037AA0A /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		462CE3FC269344130037AA0A /* SwipingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE3756202698A1600043806E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE3756242698B13B0043806E /* ConstraintsCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConstraintsCode.storyboard; sourceTree = "<group>"; };
 		FEABBA7F266383CF0093FED3 /* autoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEABBA82266383CF0093FED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEABBA84266383CF0093FED3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,11 +65,13 @@
 				FEABBA82266383CF0093FED3 /* AppDelegate.swift */,
 				FEABBA84266383CF0093FED3 /* SceneDelegate.swift */,
 				FEABBA8B266383D00093FED3 /* Assets.xcassets */,
+				FE3756202698A1600043806E /* Main.storyboard */,
 				FEABBA8D266383D00093FED3 /* LaunchScreen.storyboard */,
 				FEABBA90266383D00093FED3 /* Info.plist */,
 				462CE3F62692F6C00037AA0A /* Swiping.storyboard */,
 				462CE3FA269343160037AA0A /* SwipingViewController.swift */,
 				462CE3FC269344130037AA0A /* SwipingCollectionViewCell.swift */,
+				FE3756242698B13B0043806E /* ConstraintsCode.storyboard */,
 			);
 			path = autoLayout;
 			sourceTree = "<group>";
@@ -129,7 +135,9 @@
 			files = (
 				FEABBA8F266383D00093FED3 /* LaunchScreen.storyboard in Resources */,
 				FEABBA8C266383D00093FED3 /* Assets.xcassets in Resources */,
+				FE3756252698B13B0043806E /* ConstraintsCode.storyboard in Resources */,
 				462CE3F72692F6C00037AA0A /* Swiping.storyboard in Resources */,
+				FE3756212698A1600043806E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
