@@ -10,7 +10,5 @@ import UIKit
 class SwipingCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var textViewHight: NSLayoutConstraint!
-    
     @IBOutlet var dynamicLabel: UILabel!
-    
 }

@@ -28,14 +28,14 @@ class SwipingViewController: UIViewController {
     @IBAction func prevTouch(_ sender: Any) {
         let nextIndex = max(pageControl.currentPage - 1, 0)
         let indexPath = IndexPath(item: nextIndex, section: 0)
-        pageControl.currentPage = nextIndex
+        self.pageControl.currentPage = nextIndex
         self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
     @IBAction func nextTouch(_ sender: Any) {
         let nextIndex = min(pageControl.currentPage + 1, 3)
         let indexPath = IndexPath(item: nextIndex, section: 0)
-        pageControl.currentPage = nextIndex
+        self.pageControl.currentPage = nextIndex
         self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
 }
